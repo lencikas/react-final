@@ -77,83 +77,82 @@ const Meal = () => {
 
           return (
             <article key={idMeal}>
-              <div>
-                <h2 className="text-2xl">
-                  <span className="font-bold">Name:</span> {strMeal}
-                </h2>
-                <div
-                  className="underline"
-                  style={{ marginBottom: '20px' }}
-                ></div>
-                <img src={strMealThumb} alt={strMeal} />
-
-                <ul>
-                  <p className="font-bold mt-5">Ingredients:</p>
-                  <li>
-                    {strMeasure1} {strIngredient1}
-                  </li>
-                  <li>
-                    {strMeasure2} {strIngredient2}
-                  </li>
-                  <li>
-                    {strMeasure3} {strIngredient3}
-                  </li>
-                  <li>
-                    {strMeasure4} {strIngredient4}
-                  </li>
-                  <li>
-                    {strMeasure5} {strIngredient5}
-                  </li>
-                  <li>
-                    {strMeasure6} {strIngredient6}
-                  </li>
-                  <li>
-                    {strMeasure7} {strIngredient7}
-                  </li>
-                  <li>
-                    {strMeasure8} {strIngredient8}
-                  </li>
-                  <li>
-                    {strMeasure9} {strIngredient9}
-                  </li>
-                  <li>
-                    {strMeasure10} {strIngredient10}
-                  </li>
-                  <li>
-                    {strMeasure11} {strIngredient11}
-                  </li>
-                  <li>
-                    {strMeasure12} {strIngredient12}
-                  </li>
-                  <li>
-                    {strMeasure13} {strIngredient13}
-                  </li>
-                  <li>
-                    {strMeasure14} {strIngredient14}
-                  </li>
-                  <li>
-                    {strMeasure15} {strIngredient15}
-                  </li>
-                  <li>
-                    {strMeasure16} {strIngredient16}
-                  </li>
-                  <li>
-                    {strMeasure17} {strIngredient17}
-                  </li>
-                  <li>
-                    {strMeasure18} {strIngredient18}
-                  </li>
-                  <li>
-                    {strMeasure19} {strIngredient19}
-                  </li>
-                  <li>
-                    {strMeasure20} {strIngredient20}
-                  </li>
-                </ul>
+              <div className='article-wrapper'>
+                <div className='photo'>
+                  <h2 className="text-2xl">
+                    <span className="font-bold"></span> {strMeal}
+                  </h2>
+                  
+                  <img src={strMealThumb} alt={strMeal} />
+                </div>
+                <div className='ingredients'>
+                  <ul>
+                    <p className="font-bold mt-5">Ingredients:</p>
+                    <li>
+                      {strMeasure1} {strIngredient1}
+                    </li>
+                    <li>
+                      {strMeasure2} {strIngredient2}
+                    </li>
+                    <li>
+                      {strMeasure3} {strIngredient3}
+                    </li>
+                    <li>
+                      {strMeasure4} {strIngredient4}
+                    </li>
+                    <li>
+                      {strMeasure5} {strIngredient5}
+                    </li>
+                    <li>
+                      {strMeasure6} {strIngredient6}
+                    </li>
+                    <li>
+                      {strMeasure7} {strIngredient7}
+                    </li>
+                    <li>
+                      {strMeasure8} {strIngredient8}
+                    </li>
+                    <li>
+                      {strMeasure9} {strIngredient9}
+                    </li>
+                    <li>
+                      {strMeasure10} {strIngredient10}
+                    </li>
+                    <li>
+                      {strMeasure11} {strIngredient11}
+                    </li>
+                    <li>
+                      {strMeasure12} {strIngredient12}
+                    </li>
+                    <li>
+                      {strMeasure13} {strIngredient13}
+                    </li>
+                    <li>
+                      {strMeasure14} {strIngredient14}
+                    </li>
+                    <li>
+                      {strMeasure15} {strIngredient15}
+                    </li>
+                    <li>
+                      {strMeasure16} {strIngredient16}
+                    </li>
+                    <li>
+                      {strMeasure17} {strIngredient17}
+                    </li>
+                    <li>
+                      {strMeasure18} {strIngredient18}
+                    </li>
+                    <li>
+                      {strMeasure19} {strIngredient19}
+                    </li>
+                    <li>
+                      {strMeasure20} {strIngredient20}
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div>
                 <h3 className="font-bold">How to cook</h3>
-                <div className="underline"></div>
                 <p>{strInstructions}</p>
                 <a
                   href={strSource}
