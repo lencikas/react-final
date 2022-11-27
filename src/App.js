@@ -6,6 +6,7 @@ import Navigation from './components/Navigation'
 import Page2 from './pages/page2'
 import Page3 from './pages/page3'
 import Meal from './components/meal'
+import Searchpage from './pages/searchpage'
 
 function App() {
 
@@ -39,31 +40,28 @@ function App() {
 
   return (
     <>
-      <div>
-        <h1 className="font-bold text-4xl lg:text-6xl mt-10">
-          Random meal generator
-        </h1>
-        <div className="underline mx-auto mt-4 mb-5"></div>
-        <Meal />
-      </div>
-
-
-
-
-
-
-
-
-
-
-
-      {/* <Navigation />
+      <Navigation />
       <Routes>
         <Route path='/' element={<Homepage />} />
         <Route path='/page2' element={<Page2 />} />
         <Route path='/page3' element={<Page3 />} />
+        <Route path='/searchpage' element={<Searchpage />} />
         <Route path='*' element={<h1>Page not found</h1>} />
-      </Routes> */}
+      </Routes>
+
+      
+
+
+
+
+
+
+
+
+
+
+
+      
 
       {/* ( PIRMOJO PROJEKTO DALIS
       <div className='quote'>
