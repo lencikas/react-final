@@ -154,15 +154,6 @@ const Meal = () => {
               <div>
                 <h3>How to cook</h3>
                 <p>{strInstructions}</p>
-                <a
-                  href={strSource}
-                  target="_blank"
-                  rel="noopenner noreferrer"                >
-                  Source
-                </a>
-                <div>
-                  <small>Category: {strTags}</small>
-                </div>
               </div>
             </article>
           )

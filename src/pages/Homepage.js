@@ -7,7 +7,7 @@ const Homepage = () => {
   return (
     <div>
       <h1>
-        Random meal generator
+        Out of food recipe ideas? Click this button for a random dish
       </h1>
       <Meal />
     </div>
