@@ -1,5 +1,7 @@
 import React from 'react'
 import Meal from '../components/meal'
+import './Homepage.css'
+
 
 const Homepage = () => {
   return (

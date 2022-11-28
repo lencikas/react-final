@@ -117,9 +117,3 @@ body {
   color: white;
   margin: 0 5px 0 5px;
 }
-
-@media (max-width: 680px) {
-  .search-bar {
-    max-width: 100%;
-  }
-}

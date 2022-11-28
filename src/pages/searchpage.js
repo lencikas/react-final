@@ -1,7 +1,8 @@
+import './searchpage.css'
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
-import MealItem from "./MealItem";
+import MealItem from "../components/MealItem";
 const Meal = () => {
     const [search, setSearch] = useState();
     const [show, setShow] = useState(false);
@@ -26,11 +27,9 @@ const Meal = () => {
             <div className="main">
                 <div className="heading">
                     <h1>Search Your Food Recipe</h1>
-                    <h4>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque tempore unde sed ducimus voluptates illum!</h4>
                 </div>
                 <div className="searchBox">
                     <input type="search" className="search-bar" onChange={e => setSearch(e.target.value)} onKeyPress={searchRecipe} />
-                    <button className="search-btn"></button>
                 </div>
                 <div className="container">
                     {
