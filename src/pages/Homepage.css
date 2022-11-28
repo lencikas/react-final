@@ -44,16 +44,16 @@ h1 {
 .button .btn {
     padding: 8px;
     border-radius: 5px;
-    border: 2px solid #92400e;
-    background-color: #92400e;
+    border: 2px solid black;
+    background-color: #34a7d8;
     color: #fff;
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
 .button .btn:hover {
-    background-color: #79350b;
-    border: 2px solid #79350b;
+    background-color: #34a7d8;
+    border: 2px solid black;
 }
 
 .meals {
@@ -84,7 +84,7 @@ h1 {
 }
 
 .meals article img {
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .meals article h3 {
@@ -93,6 +93,10 @@ h1 {
 
 .search-btn {
     padding: 20px 50px;
+}
+
+.ul-wrapper {
+    display: flex;
 }
 
 @media (max-width: 680px) {
@@ -117,3 +121,4 @@ h1 {
         display: block;
     }
 }
+

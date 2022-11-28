@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import axios from 'axios'
+import Link from 'react';
 
 const Page2 = () => {
-
+    const [data, setData] = useState();
+    useEffect(() => {
+        axios.request(`https://www.themealdb.com/api/json/v1/1/list.php?c=list`)
+            .then(function (response) {
+                setData(response);
+                console.log(response)
+            })
+    }, []);
     return (
-        <div>
-            <h1>Page2</h1>
-        </div>
-    )
+        <ul>
+            {data && data.data.meals.map((elem, index) => <li key={index}>{elem.strCategory} </li>)}
+        </ul>
+    );
 }
-
 export default Page2

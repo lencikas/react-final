@@ -3,6 +3,7 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import MealItem from "../components/MealItem";
+
 const Meal = () => {
     const [search, setSearch] = useState();
     const [show, setShow] = useState(false);
@@ -19,9 +20,7 @@ const Meal = () => {
     const searchRecipe = (evt) => {
         setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
     }
-    const setIndex = (alpha) => {
-        setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?f=${alpha}`);
-    }
+    
     return (
         <>
             <div className="main">

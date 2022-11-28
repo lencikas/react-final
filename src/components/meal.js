@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import { Button } from "semantic-ui-react"
+import "semantic-ui-css/semantic.min.css"
 
 const url = 'https://www.themealdb.com/api/json/v1/1/random.php'
 
@@ -18,13 +20,12 @@ const Meal = () => {
   return (
     <>
       <div className="button">
-        <button onClick={() => fetchFood()} className="btn">
-          Generate Meal
-        </button>
+        <Button onClick={() => fetchFood()} className="btn">
+          Generate Random Meal
+        </Button>
       </div>
       <section className="meals">
         {food.map((f) => {
-          // I wonder if there is an easier way to do this...or maybe not destructuring and then using dot notation to access the values...
           const {
             idMeal,
             strMeal,
@@ -32,7 +33,6 @@ const Meal = () => {
             strMealThumb,
             strSource,
             strTags,
-            // strYouTube,
             strIngredient1,
             strIngredient2,
             strIngredient3,
@@ -79,15 +79,15 @@ const Meal = () => {
             <article key={idMeal}>
               <div className='article-wrapper'>
                 <div className='photo'>
-                  <h2 className="text-2xl">
-                    <span className="font-bold"></span> {strMeal}
+                  <h2>
+                    <span></span> {strMeal}
                   </h2>
-                  
+
                   <img src={strMealThumb} alt={strMeal} />
                 </div>
                 <div className='ingredients'>
                   <ul>
-                    <p className="font-bold mt-5">Ingredients:</p>
+                    <p>Ingredients:</p>
                     <li>
                       {strMeasure1} {strIngredient1}
                     </li>
@@ -152,17 +152,15 @@ const Meal = () => {
                 </div>
               </div>
               <div>
-                <h3 className="font-bold">How to cook</h3>
+                <h3>How to cook</h3>
                 <p>{strInstructions}</p>
                 <a
                   href={strSource}
                   target="_blank"
-                  rel="noopenner noreferrer"
-                  className="mt-3 bg-yellow-800 py-1 px-2 rounded-lg inline-block text-white transition-all hover:bg-yellow-900"
-                >
+                  rel="noopenner noreferrer"                >
                   Source
                 </a>
-                <div className="my-5">
+                <div>
                   <small>Category: {strTags}</small>
                 </div>
               </div>
