@@ -1,4 +1,4 @@
-import './searchpage.css'
+import './Searchpage.css'
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";

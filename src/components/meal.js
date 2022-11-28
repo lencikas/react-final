@@ -31,8 +31,6 @@ const Meal = () => {
             strMeal,
             strInstructions,
             strMealThumb,
-            strSource,
-            strTags,
             strIngredient1,
             strIngredient2,
             strIngredient3,

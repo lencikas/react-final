@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
+import Link from 'react';
 
 const Page4 = () => {
     const [data, setData] = useState();
@@ -12,7 +13,7 @@ const Page4 = () => {
     }, []);
     return (
         <ul>
-            {data && data.data.meals.map((elem, index) => <li key={index}>{elem.strIngredient} </li>)}
+            {data && data.data.meals.map((elem, index) => <li key={index}>{elem.strIngredient}</li>)}
         </ul>
     );
 }
