@@ -20,7 +20,7 @@ const Meal = () => {
     const searchRecipe = () => {
         setUrl(`https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
     }
-    
+
     return (
         <>
             <div className="main">
@@ -32,7 +32,7 @@ const Meal = () => {
                 </div>
                 <div className="container">
                     {
-                        show ? <MealItem data={item} /> : "Not Found"
+                        show ? <MealItem data={item} /> : "aaaa"
 
                     }
                 </div>

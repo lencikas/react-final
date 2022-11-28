@@ -3,7 +3,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Bona Nova', serif;
   font-size: 20px;
 }
 
@@ -13,9 +12,6 @@ body {
   animation: gradient 15s ease infinite;
   height: 100vh;
 }
-
-
-
 
 .main {
   width: 80%;
@@ -28,8 +24,8 @@ body {
   font-size: 48px;
   font-weight: 900;
   letter-spacing: 1px;
-  padding-top: 2rem;
   margin: 1rem;
+  padding-bottom: 30px;
 }
 
 .search-bar {
@@ -54,7 +50,7 @@ body {
   width: 180px;
   border-radius: 1rem;
   background-color: #030e12;
-  padding: 5px;
+  padding: 2px;
 }
 
 .card img {
