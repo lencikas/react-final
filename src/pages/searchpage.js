@@ -1,19 +1,19 @@
 import './Searchpage.css'
-import React from "react";
-import { useState } from "react";
-import { useEffect } from "react";
-import MealItem from "../components/MealItem";
+import React from "react"
+import { useState } from "react"
+import { useEffect } from "react"
+import MealItem from "../components/MealItem"
 
 const Meal = () => {
-    const [search, setSearch] = useState();
-    const [show, setShow] = useState(false);
-    const [item, setItem] = useState("");
-    const [url, setUrl] = useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a");
+    const [search, setSearch] = useState()
+    const [show, setShow] = useState(false)
+    const [item, setItem] = useState("")
+    const [url, setUrl] = useState("https://www.themealdb.com/api/json/v1/1/search.php?f=a")
 
     useEffect(() => {
         fetch(url).then(res => res.json()).then(data => {
-            setItem(data.meals);
-            setShow(true);
+            setItem(data.meals)
+            setShow(true)
         })
     }, [url])
 
@@ -41,4 +41,4 @@ const Meal = () => {
         </>
     )
 }
-export default Meal;
+export default Meal
